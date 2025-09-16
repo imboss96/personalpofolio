@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "title": "Piano Beats Maker",
+      "description": "Music-creation tool focused on simple beat sequencing and export. Emphasis on clear UI and reliable audio scheduling.",
+      "stack": ["JavaScript", "Web Audio API", "React"],
+      "tags": ["Frontend", "Audio", "UX"]
+    },
+    {
+      "title": "bobgigs.art",
+      "description": "Personal site for showcasing creative/tech work and experiments. Includes contact gateway and project write-ups.",
+      "stack": ["HTML", "CSS", "JS"],
+      "tags": ["Portfolio", "Static"]
+    },
+    {
+      "title": "Bingwa Sokoni — Offers Platform",
+      "description": "Concept for selling automated data/SMS/voice bundles with M-Pesa payments and order tracking.",
+      "stack": ["Node.js", "Express", "MongoDB", "M-Pesa API"],
+      "tags": ["Full-stack", "Payments"]
+    },
+    {
+      "title": "QA Automation Starter",
+      "description": "Reusable framework for UI and API tests with page-object pattern, environment configs, and CI integration.",
+      "stack": ["Cypress / Playwright", "TypeScript", "GitHub Actions"],
+      "tags": ["Testing", "CI/CD"]
+    },
+    {
+      "title": "RDP Server Interface",
+      "description": "A web-based interface for creating and managing Remote Desktop Protocol (RDP) servers. Includes user-friendly controls for starting, stopping, and monitoring RDP sessions.",
+      "stack": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "tags": ["Full-stack", "Servers", "Networking"]
+    }
+],
+"configurations": [
+{
+    "name": "Attach to Chrome",
+    "port": 9222,
+    "request": "attach",
+    "type": "chrome",
+    "webRoot": "${workspaceFolder}"
+}
+]
+}
