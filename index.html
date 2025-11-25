@@ -4,10 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ezra Ondieki Bosire — Software Developer & QA Engineer</title>
-<div class="profile-pic-container">
-  <img src="profile.jpg" alt="Ezra Ondieki Bosire" class="profile-pic">
-</div>
-
   <meta name="description" content="Portfolio of Ezra Ondieki Bosire — Software Developer & QA Engineer" />
   <style>
     .profile-pic-container {
@@ -66,7 +62,7 @@
     .brand { font-weight: 800; letter-spacing: 0.4px; }
     .nav a { margin: 0 8px; font-weight: 600; color: var(--muted); }
     .btn { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--card); color: var(--text); box-shadow: var(--shadow);
-      transition: transform .15s ease, box-shadow .2s ease; }
+      transition: transform .15s ease, box-shadow .2s ease; cursor: pointer; }
     .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 40px rgba(0,0,0,0.25); text-decoration: none; }
     .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; border: none; }
 
@@ -124,6 +120,9 @@
     <!-- Hero -->
     <section class="hero">
       <div>
+        <div class="profile-pic-container">
+          <img src="profile.jpg" alt="Ezra Ondieki Bosire" class="profile-pic">
+        </div>
         <span class="chip">Software Developer · QA Engineer · Cybersecurity</span>
         <h1 class="title">Building reliable software and breaking it—so users don't have to.</h1>
         <p class="subtitle">Kenyatta University–trained Software Engineer, Moringa School Cybersecurity bootcamp alum (6 months), and self-taught QA engineer with hands-on experience across Android Studio, Visual Studio Code, and Linux (Ubuntu). I design, test, and ship resilient systems.</p>
@@ -198,35 +197,74 @@
           <p><strong>Stack:</strong> JavaScript, Web Audio API, React</p>
           <div class="taglist"><span class="tag">Frontend</span><span class="tag">Audio</span><span class="tag">UX</span></div>
         </article>
+        
+        <article class="card">
+          <h3>Peerbets - P2P Sports Betting</h3>
+          <p>Modern peer-to-peer sports betting platform with live betting, multiple markets, wallet system, and smart matching algorithm. Features real-time updates from 100+ leagues worldwide.</p>
+          <p><strong>Stack:</strong> React, Tailwind CSS, API-Football, Firebase</p>
+          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Real-time</span><span class="tag">P2P</span><span class="tag">Fintech</span></div>
+          <p><a href="https://github.com/imboss96/Peerbets" target="_blank">View on GitHub →</a></p>
+        </article>
+
         <article class="card">
           <h3>bobgigs.art</h3>
           <p>Personal site for showcasing creative/tech work and experiments. Includes contact gateway and project write-ups.</p>
           <p><strong>Stack:</strong> HTML, CSS, JS</p>
           <div class="taglist"><span class="tag">Portfolio</span><span class="tag">Static</span></div>
         </article>
+        
         <article class="card">
           <h3>Bingwa Sokoni — Offers Platform</h3>
           <p>Concept for selling automated data/SMS/voice bundles with M-Pesa payments and order tracking.</p>
           <p><strong>Stack:</strong> Node.js, Express, MongoDB, M-Pesa API</p>
           <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Payments</span></div>
+          <p><a href="https://github.com/imboss96/Bingwasokoni" target="_blank">View on GitHub →</a></p>
         </article>
+        
         <article class="card">
           <h3>QA Automation Starter</h3>
           <p>Reusable framework for UI and API tests with page-object pattern, environment configs, and CI integration.</p>
           <p><strong>Stack:</strong> Cypress / Playwright, TypeScript, GitHub Actions</p>
           <div class="taglist"><span class="tag">Testing</span><span class="tag">CI/CD</span></div>
         </article>
-        <!-- New Project -->
+        
         <article class="card">
           <h3>RDP Server Interface</h3>
-          <p>A web-based interface for creating and managing Remote Desktop Protocol (RDP) servers. 
-             Includes user-friendly controls for starting, stopping, and monitoring RDP sessions.</p>
+          <p>A web-based interface for creating and managing Remote Desktop Protocol (RDP) servers. Includes user-friendly controls for starting, stopping, and monitoring RDP sessions.</p>
           <p><strong>Stack:</strong> HTML, CSS, JavaScript, Node.js</p>
-          <div class="taglist">
-            <span class="tag">Full-stack</span>
-            <span class="tag">Servers</span>
-            <span class="tag">Networking</span>
-          </div>
+          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Servers</span><span class="tag">Networking</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Image Downloader</h3>
+          <p>Download multiple photos from the internet for your project. Automates bulk image downloading with configurable options.</p>
+          <p><strong>Stack:</strong> Python, Requests, BeautifulSoup</p>
+          <div class="taglist"><span class="tag">Automation</span><span class="tag">Web Scraping</span><span class="tag">Python</span></div>
+          <p><a href="https://github.com/imboss96/Image-Downloader" target="_blank">View on GitHub →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Web Scraper</h3>
+          <p>Save time by extracting data from the web and saving it in structured formats like CSV and JSON files. Efficient data collection tool.</p>
+          <p><strong>Stack:</strong> Python, Scrapy, Pandas</p>
+          <div class="taglist"><span class="tag">Data Extraction</span><span class="tag">Automation</span><span class="tag">Python</span></div>
+          <p><a href="https://github.com/imboss96/Web-scrapper" target="_blank">View on GitHub →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Orbit</h3>
+          <p>Personal website to test backend and frontend skills scalability. Full-stack experimentation platform for learning and testing new technologies.</p>
+          <p><strong>Stack:</strong> Node.js, React, MongoDB</p>
+          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Experimental</span><span class="tag">Learning</span></div>
+          <p><a href="https://github.com/imboss96/orbit" target="_blank">View on GitHub →</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Google Accounts Creator</h3>
+          <p>Application (bot) for automated Google account registration. Forked project with improvements for unlimited automatic registration of Google accounts (Youtube, Gmail).</p>
+          <p><strong>Stack:</strong> Python, Selenium, Automation</p>
+          <div class="taglist"><span class="tag">Automation</span><span class="tag">Bot</span><span class="tag">Selenium</span></div>
+          <p><a href="https://github.com/imboss96/google-accounts-creator" target="_blank">View on GitHub →</a></p>
         </article>
       </div>
     </section>
@@ -250,8 +288,8 @@
           <p><strong>Location:</strong> Nairobi, Kenya</p>
           <div class="taglist">
             <a class="btn" href="mailto:Ezrahbosire1@gmail.com">Email Me</a>
-            <a class="btn" href="#" onclick="alert('Add your GitHub profile URL in the HTML!')">GitHub</a>
-            <a class="btn" href="#" onclick="alert('Add your LinkedIn profile URL in the HTML!')">LinkedIn</a>
+            <a class="btn" href="https://github.com/imboss96" target="_blank">GitHub</a>
+            <a class="btn" href="#" onclick="alert('Add your LinkedIn profile URL!')">LinkedIn</a>
           </div>
         </div>
         <div class="card">
