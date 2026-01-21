@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Albert Maclaren — Software Developer & QA Engineer</title>
-  <meta name="description" content="Portfolio of Albert Maclaren — Software Developer & QA Engineer" />
+  <title>Your Name — Software Developer</title>
+  <meta name="description" content="Portfolio of a Software Developer with full-stack, cloud, and AI/ML experience" />
   <style>
     .profile-pic-container {
       position: absolute;
@@ -85,6 +85,15 @@
     ul.clean { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
     .taglist { display: flex; gap: 8px; flex-wrap: wrap; }
     .tag { background: var(--chip); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 14px; color: var(--muted); }
+    
+    /* Timeline styling for experience */
+    .timeline { position: relative; padding-left: 20px; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--accent); }
+    .timeline-item { position: relative; margin-bottom: 24px; padding-left: 20px; }
+    .timeline-item::before { content: ''; position: absolute; left: -8px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-2); border: 2px solid var(--accent); }
+    .timeline-date { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+    .timeline-title { font-weight: 600; margin-bottom: 4px; }
+    .timeline-subtitle { color: var(--accent-2); font-size: 15px; margin-bottom: 8px; }
 
     footer { margin: 56px 0 24px; color: var(--muted); font-size: 14px; text-align: center; }
 
@@ -103,7 +112,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="brand">Albert Maclaren</div>
+      <div class="brand">Your Name</div>
       <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -120,17 +129,18 @@
     <!-- Hero -->
     <section class="hero">
       <div>
-        <span class="chip">Software Developer · QA Engineer · Cybersecurity</span>
-        <h1 class="title">Building reliable software and breaking it—so users don't have to.</h1>
-        <p class="subtitle">Kenyatta University–trained Software Engineer, Moringa School Cybersecurity bootcamp alum (6 months), and self-taught QA engineer with hands-on experience across Android Studio, Visual Studio Code, and Linux (Ubuntu). I design, test, and ship resilient systems.</p>
+        <span class="chip">Software Developer · Full-Stack · Cloud & DevOps</span>
+        <h1 class="title">Building scalable web applications with modern architectures</h1>
+        <p class="subtitle">Software Engineering graduate with hands-on experience in full-stack development, cloud computing, and microservices architecture. Passionate about creating efficient, scalable solutions and continuously learning new technologies.</p>
         <div class="taglist" style="margin-bottom:16px;">
-          <span class="tag">Android Studio</span>
-          <span class="tag">VS Code</span>
-          <span class="tag">Ubuntu</span>
-          <span class="tag">Selenium</span>
-          <span class="tag">Cypress</span>
-          <span class="tag">Appium</span>
-          <span class="tag">Git & CI/CD</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
         </div>
         <div class="taglist">
           <a class="btn primary" href="#contact">Contact Me</a>
@@ -139,16 +149,19 @@
       </div>
       <div class="hero-card">
         <div style="text-align: center; margin-bottom: 20px;">
-          <img src="https://drive.google.com/drive/folders/19RRYQ34K9Zkf7xGFO7uuRWR5A1GLGqeN" alt="Albert Maclaren" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); box-shadow: var(--shadow);">
+          <!-- Replace with your actual image URL -->
+          <div style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 48px; color: white; border: 4px solid var(--accent); box-shadow: var(--shadow);">
+            👨‍💻
+          </div>
         </div>
         <h3 style="margin-top:0">Quick facts</h3>
         <div class="kpis">
-          <div class="kpi"><b>QA & Dev</b><span>Automation & full-stack focus</span></div>
-          <div class="kpi"><b>Tooling</b><span>Android Studio · VS Code · Ubuntu</span></div>
-          <div class="kpi"><b>Practices</b><span>Agile · Code Review · CI/CD</span></div>
+          <div class="kpi"><b>Full-Stack</b><span>React, Node.js, Spring Boot</span></div>
+          <div class="kpi"><b>Cloud & DevOps</b><span>AWS, Docker, Kubernetes</span></div>
+          <div class="kpi"><b>Architecture</b><span>Microservices, Scalable Systems</span></div>
         </div>
         <div style="margin-top: 20px; text-align: center;">
-          <a class="btn primary" href="https://drive.google.com/file/d/1L0IQTj1Xwg1FKyDdckib8fDGx8KTwC25/view?usp=drive_link" target="_blank" download style="width: 100%; justify-content: center;">
+          <a class="btn primary" href="#" onclick="alert('Replace with your CV download link')" download style="width: 100%; justify-content: center;">
             📄 Download CV
           </a>
         </div>
@@ -159,128 +172,220 @@
     <section id="about">
       <h2>About</h2>
       <div class="card">
-        <p>I'm <strong>Albert Maclaren</strong>, a software developer and QA engineer who enjoys solving user problems with clean code, strong testing, and security-aware design. My background blends formal training in software engineering with a cybersecurity bootcamp and extensive hands-on testing and automation.</p>
+        <p>I'm a Software Engineering graduate with hands-on experience building scalable web applications and contributing to AI/ML data pipelines. My background includes full-stack development with JavaScript/React/Node.js and Java/Spring Boot, cloud deployment with AWS, and containerization with Docker and Kubernetes. I'm passionate about clean code, system design, and creating efficient, maintainable solutions.</p>
       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="grid cols-3">
-        <div class="card"><h3>Languages</h3><ul class="clean"><li>JavaScript / TypeScript</li><li>Python</li><li>Java</li><li>C#</li><li>SQL</li></ul></div>
-        <div class="card"><h3>Frameworks & Web</h3><ul class="clean"><li>Node.js, Express</li><li>React</li><li>Django / Flask</li><li>REST APIs, JSON</li></ul></div>
-        <div class="card"><h3>QA & Automation</h3><ul class="clean"><li>Selenium, Cypress, Playwright</li><li>Appium (Android)</li><li>JUnit, TestNG, PyTest</li><li>Postman, Newman</li></ul></div>
-        <div class="card"><h3>DevOps</h3><ul class="clean"><li>Git, GitHub / GitLab</li><li>CI/CD (GitHub Actions, Jenkins)</li><li>Docker (basics)</li><li>Linux (Ubuntu) & shell scripting</li></ul></div>
-        <div class="card"><h3>IDEs & Tools</h3><ul class="clean"><li>Android Studio</li><li>Visual Studio Code</li><li>Visual Basic / Visual Studio</li><li>Jira, Confluence</li></ul></div>
-        <div class="card"><h3>Security</h3><ul class="clean"><li>OWASP Top 10 awareness</li><li>Basic vulnerability assessment</li><li>Burp Suite, OWASP ZAP (intro)</li></ul></div>
+        <div class="card">
+          <h3>Languages</h3>
+          <ul class="clean">
+            <li>JavaScript / TypeScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Frameworks & Libraries</h3>
+          <ul class="clean">
+            <li>React.js</li>
+            <li>Node.js / Express</li>
+            <li>Spring Boot</li>
+            <li>RESTful APIs</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Cloud & DevOps</h3>
+          <ul class="clean">
+            <li>AWS (EC2, RDS, S3)</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>CI/CD (Jenkins, GitHub Actions)</li>
+            <li>Apache Kafka</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Databases</h3>
+          <ul class="clean">
+            <li>MySQL / PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+            <li>Database Optimization</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools & Platforms</h3>
+          <ul class="clean">
+            <li>Git / GitHub</li>
+            <li>VS Code / IntelliJ</li>
+            <li>Linux / Ubuntu</li>
+            <li>Postman</li>
+            <li>JIRA / Confluence</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Methodologies</h3>
+          <ul class="clean">
+            <li>Agile / Scrum</li>
+            <li>Microservices Architecture</li>
+            <li>Test-Driven Development</li>
+            <li>System Design</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Experience -->
     <section id="experience">
-      <h2>Experience</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Software Developer & QA Engineer — Freelance / Projects</h3>
-          <p><em>Dates</em>: 2023 — Present</p>
-          <ul>
-            <li>Built and tested web applications with automated regression suites (Selenium/Cypress) and API tests (Postman/Newman).</li>
-            <li>Created Android prototypes in Android Studio; implemented instrumented UI tests with Espresso.</li>
-            <li>Set up CI pipelines for linting, unit tests, and end-to-end tests using GitHub Actions.</li>
-          </ul>
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <div class="timeline">
+          
+          <!-- Undergraduate Research Assistant -->
+          <div class="timeline-item">
+            <div class="timeline-date">Mar 2023 – Jun 2023</div>
+            <div class="timeline-title">Undergraduate Research Assistant</div>
+            <div class="timeline-subtitle">Department of Computer Science & Software Engineering, Kenyatta University</div>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+              <li>Collaborated with a team to design and develop a scalable microservices framework for real-time data processing</li>
+              <li>Implemented services using Java, Spring Boot, Docker, Kubernetes, and Apache Kafka</li>
+              <li>Conducted performance benchmarks and optimizations, reducing query execution time by 40%</li>
+              <li>Established CI/CD pipelines using Jenkins and GitHub Actions</li>
+              <li>Integrated Redis caching and implemented OAuth 2.0/JWT authentication</li>
+            </ul>
+            <div class="taglist" style="margin-top: 12px;">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Apache Kafka</span>
+              <span class="tag">Microservices</span>
+            </div>
+          </div>
+          
+          <!-- Software Developer Intern -->
+          <div class="timeline-item">
+            <div class="timeline-date">Mar 2024 – Jul 2024</div>
+            <div class="timeline-title">Software Developer Intern</div>
+            <div class="timeline-subtitle">Amiran Communications EA</div>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+              <li>Participated in full SDLC for IoT and security projects involving smart home automation and CCTV systems</li>
+              <li>Developed cloud-based interfaces and mobile applications for remote monitoring and control</li>
+              <li>Integrated software with hardware systems using RTSP and ONVIF protocols</li>
+              <li>Built backend services for device management and user interfaces for system control</li>
+            </ul>
+            <div class="taglist" style="margin-top: 12px;">
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">IoT</span>
+              <span class="tag">RTSP</span>
+              <span class="tag">SDLC</span>
+            </div>
+          </div>
+          
+          <!-- Data Annotator -->
+          <div class="timeline-item">
+            <div class="timeline-date">2023 – 2024</div>
+            <div class="timeline-title">Data Annotator</div>
+            <div class="timeline-subtitle">AI Training & Machine Learning Projects</div>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+              <li>Created high-quality labeled datasets for text, image, and structured data for ML model training</li>
+              <li>Maintained >95% annotation accuracy while meeting production deadlines</li>
+              <li>Identified edge cases and patterns to improve annotation protocols</li>
+              <li>Developed understanding of data bias and its impact on model performance</li>
+            </ul>
+            <div class="taglist" style="margin-top: 12px;">
+              <span class="tag">Data Labeling</span>
+              <span class="tag">AI/ML</span>
+              <span class="tag">Quality Assurance</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Key Projects</h2>
       <div class="grid cols-2">
+        
+        <!-- Scalable Microservices Framework -->
         <article class="card">
-          <h3>Piano Beats Maker</h3>
-          <p>Music-creation tool focused on simple beat sequencing and export. Emphasis on clear UI and reliable audio scheduling.</p>
-          <p><strong>Stack:</strong> JavaScript, Web Audio API, React</p>
-          <div class="taglist"><span class="tag">Frontend</span><span class="tag">Audio</span><span class="tag">UX</span></div>
+          <h3>Scalable Real-Time Data Processing Framework</h3>
+          <p><strong>Capstone Research Project</strong> | Kenyatta University</p>
+          <p>Designed and implemented a microservices-based framework for processing large-scale real-time data streams. The system handles high-throughput data with optimized performance and scalability.</p>
+          <p><strong>Key Achievements:</strong> Reduced query execution time by 40%, implemented automated CI/CD pipelines, and achieved horizontal scaling with Kubernetes.</p>
+          <div class="taglist">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Apache Kafka</span>
+            <span class="tag">Microservices</span>
+            <span class="tag">AWS</span>
+          </div>
         </article>
         
+        <!-- Smart Home & CCTV Platform -->
         <article class="card">
-          <h3>Peerbets - P2P Sports Betting</h3>
-          <p>Modern peer-to-peer sports betting platform with live betting, multiple markets, wallet system, and smart matching algorithm. Features real-time updates from 100+ leagues worldwide.</p>
-          <p><strong>Stack:</strong> React, Tailwind CSS, API-Football, Firebase</p>
-          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Real-time</span><span class="tag">P2P</span><span class="tag">Fintech</span></div>
-          <p><a href="https://github.com/imboss96/Peerbets" target="_blank">View on GitHub →</a></p>
-        </article>
-
-        <article class="card">
-          <h3>bobgigs.art</h3>
-          <p>Personal site for showcasing creative/tech work and experiments. Includes contact gateway and project write-ups.</p>
-          <p><strong>Stack:</strong> HTML, CSS, JS</p>
-          <div class="taglist"><span class="tag">Portfolio</span><span class="tag">Static</span></div>
-        </article>
-        
-        <article class="card">
-          <h3>Bingwa Sokoni — Offers Platform</h3>
-          <p>Concept for selling automated data/SMS/voice bundles with M-Pesa payments and order tracking.</p>
-          <p><strong>Stack:</strong> Node.js, Express, MongoDB, M-Pesa API</p>
-          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Payments</span></div>
-          <p><a href="https://github.com/imboss96/Bingwasokoni" target="_blank">View on GitHub →</a></p>
+          <h3>Smart Home Automation & CCTV Integration Platform</h3>
+          <p><strong>Internship Project</strong> | Amiran Communications</p>
+          <p>Full-stack IoT solution for remote monitoring and control of smart home devices and security cameras. Features cloud-based dashboards and mobile applications.</p>
+          <p><strong>Key Features:</strong> Real-time video streaming, device management dashboard, mobile remote control, and integration with various IoT protocols.</p>
+          <div class="taglist">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">IoT</span>
+            <span class="tag">RTSP</span>
+            <span class="tag">Mobile App</span>
+            <span class="tag">Cloud</span>
+          </div>
         </article>
         
-        <article class="card">
-          <h3>QA Automation Starter</h3>
-          <p>Reusable framework for UI and API tests with page-object pattern, environment configs, and CI integration.</p>
-          <p><strong>Stack:</strong> Cypress / Playwright, TypeScript, GitHub Actions</p>
-          <div class="taglist"><span class="tag">Testing</span><span class="tag">CI/CD</span></div>
-        </article>
-        
-        <article class="card">
-          <h3>RDP Server Interface</h3>
-          <p>A web-based interface for creating and managing Remote Desktop Protocol (RDP) servers. Includes user-friendly controls for starting, stopping, and monitoring RDP sessions.</p>
-          <p><strong>Stack:</strong> HTML, CSS, JavaScript, Node.js</p>
-          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Servers</span><span class="tag">Networking</span></div>
-        </article>
-
-        <article class="card">
-          <h3>Image Downloader</h3>
-          <p>Download multiple photos from the internet for your project. Automates bulk image downloading with configurable options.</p>
-          <p><strong>Stack:</strong> Python, Requests, BeautifulSoup</p>
-          <div class="taglist"><span class="tag">Automation</span><span class="tag">Web Scraping</span><span class="tag">Python</span></div>
-          <p><a href="https://github.com/imboss96/Image-Downloader" target="_blank">View on GitHub →</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Web Scraper</h3>
-          <p>Save time by extracting data from the web and saving it in structured formats like CSV and JSON files. Efficient data collection tool.</p>
-          <p><strong>Stack:</strong> Python, Scrapy, Pandas</p>
-          <div class="taglist"><span class="tag">Data Extraction</span><span class="tag">Automation</span><span class="tag">Python</span></div>
-          <p><a href="https://github.com/imboss96/Web-scrapper" target="_blank">View on GitHub →</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Orbit</h3>
-          <p>Personal website to test backend and frontend skills scalability. Full-stack experimentation platform for learning and testing new technologies.</p>
-          <p><strong>Stack:</strong> Node.js, React, MongoDB</p>
-          <div class="taglist"><span class="tag">Full-stack</span><span class="tag">Experimental</span><span class="tag">Learning</span></div>
-          <p><a href="https://github.com/imboss96/orbit" target="_blank">View on GitHub →</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Google Accounts Creator</h3>
-          <p>Application (bot) for automated Google account registration. Forked project with improvements for unlimited automatic registration of Google accounts (Youtube, Gmail).</p>
-          <p><strong>Stack:</strong> Python, Selenium, Automation</p>
-          <div class="taglist"><span class="tag">Automation</span><span class="tag">Bot</span><span class="tag">Selenium</span></div>
-          <p><a href="https://github.com/imboss96/google-accounts-creator" target="_blank">View on GitHub →</a></p>
-        </article>
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education & Certifications -->
     <section id="education">
-      <h2>Education</h2>
-      <div class="grid">
-        <div class="card"><h3>Kenyatta University</h3><p>Bachelor's in Computer Science</p></div>
-        <div class="card"><h3>Moringa School</h3><p>Cybersecurity Bootcamp — 6 months</p></div>
-        <div class="card"><h3>Self-Directed</h3><p>QA Engineering (courses, docs, and practice)</p></div>
+      <h2>Education & Certifications</h2>
+      <div class="grid cols-3">
+        
+        <!-- Bachelor's Degree -->
+        <div class="card">
+          <h3>Bachelor of Science in Software Engineering</h3>
+          <p><strong>2021 – 2024</strong></p>
+          <p>Kenyatta University</p>
+          <p><em>Relevant Coursework:</em> Software Design & Architecture, Database Systems, Data Structures & Algorithms, OOP</p>
+        </div>
+        
+        <!-- Cybersecurity Diploma -->
+        <div class="card">
+          <h3>Diploma in Cybersecurity</h3>
+          <p><strong>2024</strong></p>
+          <p>Moringa School</p>
+          <p>Comprehensive program covering security principles, threat analysis, and defensive techniques</p>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="card">
+          <h3>Professional Certifications</h3>
+          <ul class="clean">
+            <li>• AWS Certified Security – Specialty (AWS)</li>
+            <li>• Cisco Certified Network Associate (CCNA) – Cisco Systems</li>
+            <li>• CompTIA Security+ – CompTIA</li>
+            <li>• CISSP – ISC² (In Progress)</li>
+          </ul>
+        </div>
+        
       </div>
     </section>
 
@@ -289,16 +394,17 @@
       <h2>Contact</h2>
       <div class="grid cols-2">
         <div class="card">
-          <p><strong>Email:</strong> <a href="mailto:Ezrahbosire1@gmail.com">Ezrahbosire1@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
           <p><strong>Location:</strong> Nairobi, Kenya</p>
-          <div class="taglist">
-            <a class="btn" href="mailto:Ezrahbosire1@gmail.com">Email Me</a>
-            <a class="btn" href="https://github.com/imboss96" target="_blank">GitHub</a>
-            <a class="btn" href="#" onclick="alert('Add your LinkedIn profile URL!')">LinkedIn</a>
+          <p><strong>Status:</strong> Seeking full-time Software Engineering roles</p>
+          <div class="taglist" style="margin-top: 16px;">
+            <a class="btn" href="mailto:your.email@example.com">Email Me</a>
+            <a class="btn" href="#" onclick="alert('Add your GitHub URL')">GitHub</a>
+            <a class="btn" href="#" onclick="alert('Add your LinkedIn URL')">LinkedIn</a>
           </div>
         </div>
         <div class="card">
-          <form id="contactForm" action="https://formspree.io/f/xkgvkynb" method="POST">
+          <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
             <label for="name">Name</label>
             <input id="name" name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--chip);color:var(--text);margin:6px 0 12px;">
             <label for="email">Email</label>
@@ -313,7 +419,7 @@
   </main>
 
   <footer>
-    © 2025 Albert Maclaren — Built with HTML, CSS & JS.
+    © 2025 Your Name — Built with HTML, CSS & JavaScript.
   </footer>
 
   <script>
@@ -323,7 +429,3 @@
   </script>
 </body>
 </html>
-
-
-
-
